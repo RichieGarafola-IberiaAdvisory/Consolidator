@@ -20,7 +20,7 @@ This Python script is designed to consolidate data from multiple Excel files loc
 ### Install Dependencies:
 Ensure that you have the required packages installed by running:
         
-        pip install pandas openpyxl tk pywin32
+        pip install pandas streamlit
         
 ### Folder Structure:
 Make sure to organize your Excel files in the "Input" folder within the same directory as the script. The consolidated output will be saved in the "Output" folder.
@@ -38,7 +38,8 @@ Execute the script in a Python environment. The consolidated data will be export
 - os: Operating system interaction.
 - glob: File path pattern matching.
 - warnings: Suppress warnings during Excel file reading.
-- datetime: Obtain current date and time. 
+- datetime: Obtain current date and time.
+- streamlit: GUI application.
 
 
 ### Set Input / Output Folder Directories
