@@ -1,6 +1,6 @@
 # Data Consolidation Script
 
-This Python script is designed to consolidate data from multiple Excel files located in the "Input" folder and export the consolidated data to an Excel file in the "Output" folder. Additionally, it provides a user interface using Tkinter to allow the user to choose whether to send an automated email with the consolidated data as an attachment.
+This Python script is designed to consolidate data from multiple Excel files located in the "Input" folder and export the consolidated data to an Excel file in the "Output" folder.
 
 ---
 
@@ -11,16 +11,6 @@ This Python script is designed to consolidate data from multiple Excel files loc
 - Consolidation of Data:
     - Reads data from multiple Excel files using Pandas.
     - Concatenates data frames and handles exceptions during file processing.
-
-- Tkinter User Interface:
-    - Launches a Tkinter window with "Send" and "Don't Send" buttons.
-    - Updates a global variable 'switch' based on the user's choice.
-
-- Automated Email:
-    - If 'switch' is set to 'Send,' the script initializes Outlook and sends an automated email with the consolidated file attached.
-
-- Additional Notes:
-    - The script prints messages indicating successful data import and any encountered errors.
 
 ---
 
@@ -48,10 +38,7 @@ Execute the script in a Python environment. The consolidated data will be export
 - os: Operating system interaction.
 - glob: File path pattern matching.
 - warnings: Suppress warnings during Excel file reading.
-- win32com.client: Enable communication with Microsoft Outlook.
-- tkinter: Graphical User Interface toolkit for creating user interfaces.
 - datetime: Obtain current date and time. 
-- openpyxl: Read and Write Excel files.
 
 
 ### Set Input / Output Folder Directories
@@ -96,19 +83,6 @@ Execute the script in a Python environment. The consolidated data will be export
 
 - Consolidated Data Preview:
     - The consolidated data frame is printed for a quick preview.
-
-<!-- --- -->
-
-- Tkinter User Interface:
-
-    - Launches a Tkinter window with "Send" and "Don't Send" buttons.
-    - Updates a global variable 'switch' based on the user's choice.
-
-<!-- --- -->
-
-- Automated Email:
-
-    - If 'switch' is set to 'Send,' the script initializes Outlook and sends an automated email with the consolidated file attached.
     
 ---
 
@@ -117,9 +91,7 @@ Execute the script in a Python environment. The consolidated data will be export
 - If no dataframes are successfully read, a corresponding message will be printed.
 - Ensure that the Excel sheets in the input files have a sheet named "Details" for successful reading.
 - In case of errors during reading, error messages will be printed for troubleshooting.
-- The script does not handle user authentication for sending emails. Ensure Outlook is configured to send emails without user intervention.
 - The 'Input' and 'Output' folders are created if they do not exist.
-- Be cautious with sensitive information such as email recipients; consider using environment variables or other secure methods for storing sensitive data.
 
 ---
 ---
