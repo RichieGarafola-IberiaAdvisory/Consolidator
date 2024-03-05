@@ -30,7 +30,7 @@ output_dir = Path(output_dir_manual) if output_dir_manual else Path(output_dir)
 # User input for sheet name, rows to skip, and output file name
 st.header("Data Configuration")
 with st.container():
-    sheet_name = st.text_input("Sheet Name:", "Data")
+    sheet_name = st.text_input("Sheet Name:", "Sheet1")
     rows_to_skip = st.number_input("Rows to Skip:", value=0)
     output_file_name = st.text_input("Output File Name:", "Consolidated_Input_Files")
 
