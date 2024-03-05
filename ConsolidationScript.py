@@ -55,7 +55,7 @@ with st.expander("Data Processing"):
     for f in files:
         try:
             temp_df = pd.read_excel(f, sheet_name=sheet_name, skiprows=rows_to_skip)
-            temp_df['Source'] = f.split('\\')[-1]
+            temp_df['Source'] = Path(f).name
             data_frames.append(temp_df)
             st.success(f"File Imported: {f.split('/')[-1]}")
         except ValueError:
