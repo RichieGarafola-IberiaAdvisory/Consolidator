@@ -1,0 +1,4 @@
+streamlit == 1.26.0
+pandas == 2.0.2
+datetime == 5.4
+pathlib  == 1.0.1
